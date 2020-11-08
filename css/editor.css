@@ -1,0 +1,16 @@
+.tablist {
+    padding: 20px;
+}
+
+.tablist .tab {
+    display: inline-block;
+    color: white;
+    padding: 5px 10px;
+    margin: 2px;
+    border-radius: 10px;
+}
+
+.icon-cancel-circle:before {
+      font-size: 11px;
+      content: "\ea0d";
+}

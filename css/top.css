@@ -1,0 +1,84 @@
+:root {
+    --top-items: 3;
+}
+
+.top {
+    width: 100%;
+    background: url("../img/header-backdrop.webp");
+    background-size: cover;
+    color: black;
+    padding: 20px;
+    height: 80px;
+    border-bottom: 3px #d8d8d8 solid;
+}
+
+.top .heading {
+    display: block;
+    width:100%;
+    font-size: 1.7rem !important;
+}
+
+.top .heading b {
+    font-size: 1.7rem !important;
+}
+
+.top .version {
+    font-size: 0.8rem;
+    padding-left: 20px;
+}
+
+.top .subtext {
+    color: white;
+    background-color: #111111;
+
+    display: inline-block;
+    width: calc(50% / var(--top-items));
+
+    margin-top: 20px;
+    padding: 8px;
+    
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* 4K Screens. */
+@media only screen and (min-width: 2000px) {
+    .top .subtext {
+        width: calc(20% / var(--top-items));
+    }
+}
+
+/* Dekstop screens. */
+@media only screen and (max-width: 1300px) {
+    .top .subtext {
+        width: calc(75% / var(--top-items));
+    }
+}
+
+/* Tablet screens */
+@media only screen and (max-width: 900px) {
+    .top { height: 10vh; }
+    .top .subtext { width: calc(90% / var(--top-items)); }
+
+    .split {
+        display: block;
+        width: 100%;
+    }
+}
+
+/* 720p Screens */
+@media only screen and (max-width: 750px) {
+    .top .subtext { width: calc(85% / var(--top-items)); }
+}
+
+ /* Phones? */
+@media only screen and (max-width: 550px) {
+    .top { height: 23vh; }
+    .top .subtext { width: 85%; }
+}
+
+/* Really small screens. */
+@media only screen and (max-width: 300px) {
+    .top .version { display: none; }
+    .top .subtext { width: 80%; }
+}

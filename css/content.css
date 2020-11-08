@@ -1,0 +1,16 @@
+:root {
+    --content-height: 92.2vh;
+}
+
+.content {
+    width: 100%;
+    background-color: #f8f8f8;
+    height: var(--content-height);
+    border-bottom: 10px solid #001a2d;
+}
+
+.content .editor {
+    width: 100%;
+    display:inline-block;
+    height: var(--content-height);
+}

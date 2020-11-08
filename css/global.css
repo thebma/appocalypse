@@ -1,0 +1,44 @@
+@font-face {
+    font-family: "Raleway";
+    src: url("../fonts/Raleway.ttf");
+}
+
+@font-face {
+    font-family: "icomoon";
+    src: url("../fonts/icomoon.ttf")
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    font-size: 10px;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cancel-circle:before { content: "\ea0d"; }
+  
+
+* {
+    font-size: 1rem;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    text-rendering: optimizeLegibility;
+    line-height: 1.2rem;
+}
+
+html, body, head {
+    margin: 0;
+    padding: 0;
+
+    overflow-x: hidden;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
