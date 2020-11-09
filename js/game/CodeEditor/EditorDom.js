@@ -31,9 +31,11 @@ function EditorDom_AddLine(idx)
 
     let tdLineCount = document.createElement("td");
     tdLineCount.setAttribute("id", `line-${idx}`);
+    tdLineCount.className = "line";
     tdLineCount.innerHTML = idx + 1;
 
     let tdLineCode = document.createElement("td");
+    tdLineCode.className = "code " + (idx % 2 == 0 ? "even" : "odd");
     tdLineCode.setAttribute("id", `code-${idx}`);
 
     tableRow.appendChild(tdLineCount);

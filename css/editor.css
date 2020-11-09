@@ -10,7 +10,33 @@
     border-radius: 10px;
 }
 
+.codearea td {
+    font-family: "Courier";
+}
+
+.codearea .line {
+    background-color: #dfdfdff2;
+    color: #868686;
+    text-align: right;
+    padding-left: 20px;
+    border-radius: 5px;
+}
+
+.codearea .code.even {
+    background-color: #f3f3f3;
+}
+  
+.codearea .code.odd {
+    background-color: #f8f8f8f8;
+}
+
+.codearea .code {
+    width: 100%;
+    padding-left: 5px;
+}
+
 .icon-cancel-circle:before {
       font-size: 11px;
       content: "\ea0d";
 }
+
